@@ -87,7 +87,7 @@ class ChatGPTInterface:
     def retryCallback(self, sender):
         # Logic for retrying the code generation
         self.w.retryButton.show(False)  # Hide the retry button after clicked
-        prompt = f"The original prompt was: {self.original_prompt}\nThe response I got was: {self.original_response}\nBut the code you gave me did not work. please update the code for me. I just need the updated code and no explanation is needed."
+        prompt = f"The original prompt was: {self.original_prompt}\nThe response I got was: {self.original_response}\nBut the code you gave me did not work. Please update the code for me. I just need the updated code and no explanation is needed."
         
         self.runCallback(None)  # Call the runCallback again
 
